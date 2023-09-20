@@ -1,0 +1,10 @@
+.calc-button {
+  background: #e2e2e2;
+  width: 25vw;
+  height: 25vw;
+  font-size: 9vw;
+  margin: 0.9vw;
+  border: none;
+  cursor: pointer;
+  font-family: "Oswald", "IBM Plex Sans JP", sans-serif;
+}

@@ -1,0 +1,6 @@
+.action_button {
+	width: 20vw;
+	border-radius: 4vw;
+	padding: 0.6vw 3.2vw;
+	word-wrap: break-word;
+}

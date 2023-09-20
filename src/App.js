@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Result from "./components/Result";
+import Keypad from "./components/Keypad";
+import InOut from "./components/InOUt";
+import useCalculator from "./hooks/useCalculator";
 
-function App() {
+const App = () => {
+  console.log("App.js is called");
+  const { result, handleButtonClick } = useCalculator();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Result newResult={result} />
+      <InOut newValue={result}　handleButtonClick={handleButtonClick} />
+      <Keypad onButtonClick={handleButtonClick} />
+    </>
   );
-}
+};
 
 export default App;

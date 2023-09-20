@@ -1,0 +1,32 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 25vw;
+  background: #ffffff;
+  padding-bottom: 5vw;
+}
+
+.result-content {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+
+.label {
+  color: #777777;
+  font-size: 14.2px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+.amount {
+  font-size: 48px;
+}
+
+.unit {
+  margin-left: 8px;
+}

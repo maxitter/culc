@@ -1,0 +1,9 @@
+.keypad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+}

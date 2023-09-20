@@ -1,0 +1,35 @@
+.hukidashi {
+  background: #444444;
+  color: #ffffff;
+  width: 73vw;
+  height: 15vw;
+  margin: -14px auto 12px;
+  border-radius: 2vw;
+  padding: 1vw 5vw 3vw;
+  position: relative;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 13px solid #444444; /* 吹き出しの色と一致させる */
+  position: absolute;
+  top: -13px; /* 三角形が吹き出しの上部に位置するように */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input_value {
+	width: 80vw;
+	text-align: center;
+}
+
+.input_value .yen {
+	font-size: 6vw;
+}
+
+.input_value .yenwo {
+	font-size: 3vw;
+}
