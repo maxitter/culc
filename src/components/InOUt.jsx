@@ -13,9 +13,9 @@ const InOut = ({ newValue, handleButtonClick }) => {
           <span className="yenwo">円を</span>
         </div>
         <div className="action_buttons">
-          <ActionButton label="自分で使った" value={newValue} handleButtonClick={handleButtonClick}/>
-          <ActionButton label="2人用に使った" value={newValue} handleButtonClick={handleButtonClick} />
-          <ActionButton label="振り込みした" value={newValue} handleButtonClick={handleButtonClick} />
+          <ActionButton label="自分用" act={1} value={newValue} handleButtonClick={handleButtonClick}/>
+          <ActionButton label="2人用" act={2} value={newValue} handleButtonClick={handleButtonClick} />
+          <ActionButton label="振込" act={3} value={newValue} handleButtonClick={handleButtonClick} />
         </div>
         <div className="triangle"></div>
       </div>

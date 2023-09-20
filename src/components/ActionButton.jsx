@@ -1,6 +1,15 @@
+import { FaUser, FaUserFriends } from "react-icons/fa";
+import { AiFillMoneyCollect } from "react-icons/ai";
 import "../css/actionbutton.css";
 
-const ActionButton = ({ label, value, handleButtonClick }) => {
+const ActionButton = ({ label, act, value, handleButtonClick }) => {
+
+  const abSetting = {
+	1: { icon: <FaUser size={17} /> },
+    2: { icon: <FaUserFriends size={24} /> },
+    3: { icon: <AiFillMoneyCollect size={22} /> },
+  };
+
   const writeAction = () => {
     switch (label) {
       case "自分で使った":
@@ -22,6 +31,8 @@ const ActionButton = ({ label, value, handleButtonClick }) => {
 
   return (
     <button className="action_button" onClick={writeAction}>
+      {abSetting[act].icon}
+	  <span style={{width: "4px", display:'inline-block'}}></span>
       {label}
     </button>
   );

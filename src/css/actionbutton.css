@@ -1,6 +1,12 @@
 .action_button {
-	width: 20vw;
-	border-radius: 4vw;
+	width: 24vw;
+	height: 8.4vw;
+	border-radius: 6vw;
+	border: 0px solid #ffffff;
+	margin: 0.6vw 0vw;
 	padding: 0.6vw 3.2vw;
 	word-wrap: break-word;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
