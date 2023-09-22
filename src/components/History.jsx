@@ -34,11 +34,11 @@ const History = () => {
   const renderIcon = (type) => {
 	switch (type) {
 	  case "Frkm":
-		return <AiFillMoneyCollect size={19} color="#888888"/>;
+		return <AiFillMoneyCollect className="icon-frkm" />; //19
 	  case "ForMe":
-		return <FaUser size={16} color="#888888" />;
+		return <FaUser className="icon-fauser" />; //16
 	  case "ForUs":
-		return <FaUserFriends size={19} color="#888888" />;
+		return <FaUserFriends className="icon-friends" />; //19
 	  default:
 		return null;
 	}

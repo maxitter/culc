@@ -25,6 +25,21 @@
 	text-align: center;
 }
 
+.icon-frkm {
+	font-size: 4vw;
+	color: #888888;
+}
+
+.icon-fauser {
+	font-size: 3.7vw;
+	color: #888888;
+}
+
+.icon-friends {
+	font-size: 4vw;
+	color: #888888;
+}
+
 .history_type svg {
 	margin-bottom: -3px;
 }

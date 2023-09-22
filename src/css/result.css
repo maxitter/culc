@@ -19,15 +19,16 @@
 
 .label {
   color: #777777;
-  font-size: 14.2px;
+  font-size: 3.5vw;
   font-weight: 400;
-  margin-right: 15px;
+  margin-right: 3.1vw;
 }
 
 .amount {
-  font-size: 48px;
+  font-size: 10.7vw;
 }
 
 .unit {
-  margin-left: 8px;
+  font-size: 4.2vw;
+  margin-left: 2vw;
 }
