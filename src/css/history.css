@@ -1,0 +1,42 @@
+.history_wrap {
+	width: 80vw;
+	margin: 10vw auto;
+}
+
+.history_record {
+	background: #F5F5F5;
+	margin: 1vw 0vw;
+	text-align: left;
+	display: flex;
+	justify-content: flex-start;
+	gap: 11px;
+	align-items: baseline;
+	padding: 1vw 0vw 1vw 2vw;
+	border-radius: 2vw;
+	font-size: 3.3vw;
+}
+
+.history_date {
+	color: #999999;;
+}
+
+.history_type {
+	width: 3.6vw;
+	text-align: center;
+}
+
+.history_type svg {
+	margin-bottom: -3px;
+}
+
+.history_action {
+	color: #999999;
+	display: flex;
+}
+
+.history_amount {
+	color: #555555;
+	font-weight: bold;
+	margin-right: 0.7vw;
+	letter-spacing: 0.1vw;
+}

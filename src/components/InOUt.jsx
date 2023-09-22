@@ -1,9 +1,10 @@
+import { useState } from "react";
 import ActionButton from "./ActionButton";
 import "../css/inout.css";
 
 const InOut = ({ newValue, handleButtonClick }) => {
-  console.log("InOut newValue:", newValue);
   const visibilityStyle = newValue === 0 ? { visibility: "hidden" } : {};
+  const [isDisabled, setIsDisabled] = useState(false);
 
   return (
     <>
@@ -13,9 +14,9 @@ const InOut = ({ newValue, handleButtonClick }) => {
           <span className="yenwo">円を</span>
         </div>
         <div className="action_buttons">
-          <ActionButton label="自分用" act={1} value={newValue} handleButtonClick={handleButtonClick}/>
-          <ActionButton label="2人用" act={2} value={newValue} handleButtonClick={handleButtonClick} />
-          <ActionButton label="振込" act={3} value={newValue} handleButtonClick={handleButtonClick} />
+          <ActionButton label="自分用" act={1} value={newValue} handleButtonClick={handleButtonClick} isDisabled={isDisabled} setIsDisabled={setIsDisabled}/>
+          <ActionButton label="2人用" act={2} value={newValue} handleButtonClick={handleButtonClick} isDisabled={isDisabled} setIsDisabled={setIsDisabled} />
+          <ActionButton label="振込" act={3} value={newValue} handleButtonClick={handleButtonClick} isDisabled={isDisabled} setIsDisabled={setIsDisabled} />
         </div>
         <div className="triangle"></div>
       </div>

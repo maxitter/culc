@@ -7,6 +7,7 @@ div {
 }
 
 body {
+  position: relative;
   background: #efefef;
   margin: 0;
   -webkit-font-smoothing: antialiased;

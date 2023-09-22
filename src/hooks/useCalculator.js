@@ -11,7 +11,6 @@ const useCalculator = () => {
       setResult(Math.floor(result / 10));
     } else if (label === "AC") {
       setResult(0);
-	  console.log(`resultは${result}です`);
     } else {
       console.log(
         `%c${label}はまだ実装されていません useCalculator.js`,
